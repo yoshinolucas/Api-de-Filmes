@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using EAPI.Data;
-using EAPI.Data.DTOs;
 using EAPI.Models;
 using EAPI.Controllers;
+using EAPI.Data.DTOs.Filmes;
 
 namespace EAPI.Profiles
 {
@@ -10,7 +10,7 @@ namespace EAPI.Profiles
     {
         public FilmeProfile()
         {
-            CreateMap<CreateFilmeDTO, FilmeProfile>();
+            CreateMap<CreateFilmeDTO, Filme>();
             CreateMap<Filme, ReadFilmeDTO>();
             CreateMap<UpdateFilmeDTO, Filme>();
 

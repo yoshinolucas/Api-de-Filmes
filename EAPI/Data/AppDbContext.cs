@@ -5,14 +5,16 @@ using System;
 
 namespace EAPI.Data
 {
-    public class FilmeContext : DbContext
+    public class AppDbContext : DbContext
     {
-        public FilmeContext(DbContextOptions<FilmeContext> opt)
+        public AppDbContext(DbContextOptions<AppDbContext> opt)
             : base(opt)
         {
 
         }
 
         public DbSet<Filme> Filmes { get; set; }
+
+        public DbSet<CreateCinemaDTO> Cinemas { get; set; }
     }
 }

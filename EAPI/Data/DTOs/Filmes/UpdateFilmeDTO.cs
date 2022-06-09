@@ -1,12 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using AutoMapper;
-using System;
-using EAPI.Models;
-using EAPI.Controllers;
 
-namespace EAPI.Data.DTOs
+namespace EAPI.Data.DTOs.Filmes
 {
-    public class CreateFilmeDTO
+    public class UpdateFilmeDTO
     {
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [MaxLength(30, ErrorMessage = "O campo {0} deve ter no máximo {1} caracteres")]
