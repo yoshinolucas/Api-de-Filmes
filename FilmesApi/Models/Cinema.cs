@@ -1,4 +1,5 @@
 ﻿using FilmesApi.Models;
+using FilmesApi.Models.Funcionarios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -17,6 +18,11 @@ namespace FilmesAPI.Models
         public virtual Endereco Endereco { get; set; }
 
         public int EnderecoId { get; set; }
+
+        public virtual Gerente Gerente { get; set; }
+
+        public int GerenteId { get; set; }
     }
+
 
 }
