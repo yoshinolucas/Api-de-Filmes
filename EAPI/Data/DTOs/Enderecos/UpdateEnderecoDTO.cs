@@ -1,11 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EAPI.Data.DTOs.Cinemas
+namespace EAPI.Data.DTOs.Enderecos
 {
     public class UpdateEnderecoDTO
     {
 
         [Required(ErrorMessage = "O campo de {0} é obrigatório!")]
-        public string Nome { get; set; }
+        public string Logradouro { get; set; }
+        [Required]
+        [MaxLength(7)]
+        public int Numero { get; set; }
     }
 }

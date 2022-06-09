@@ -1,13 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EAPI.Data.DTOs.Cinemas
+namespace EAPI.Data.DTOs.Enderecos
 {
-    public class ReadCinemaDTO
+    public class ReadEnderecoDTO
     {
         [Key]
         [Required]
         public int Id { get; set; }
+
         [Required(ErrorMessage = "O campo de {0} é obrigatório!")]
-        public string Nome { get; set; }
+        public string Logradouro { get; set; }
+        [Required]
+        [MaxLength(7)]
+        public int Numero { get; set; }
     }
 }

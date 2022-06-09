@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Apresentação", "0-Apresentação", "{C6DBDDED-5D7B-4ADC-B7C1-F089CFC30505}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAPI", "EAPI\EAPI.csproj", "{40BDDC5A-770F-4F43-AAB8-D349D6E51472}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmesAPI", "EAPI\FilmesAPI.csproj", "{40BDDC5A-770F-4F43-AAB8-D349D6E51472}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
