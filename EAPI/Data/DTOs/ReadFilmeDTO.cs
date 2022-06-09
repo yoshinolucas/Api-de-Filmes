@@ -1,13 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using AutoMapper;
-using EAPI.Data;
-using EAPI.Data.DTOs;
-using EAPI.Controllers;
 
-namespace EAPI.Models
+namespace EAPI.Data.DTOs
 {
-    public class Filme
+    public class ReadFilmeDTO
     {
         [Key]
         [Required]
@@ -21,6 +17,6 @@ namespace EAPI.Models
         public string Genero { get; set; }
         [Range(1, 600, ErrorMessage = "A duração deve ser de 1 a 600")]
         public int Duracao { get; set; }
-
+        public DateTime HoraDaConsulta { get; set; }
     }
 }
